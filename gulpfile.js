@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('build', function () {
-    return gulp.src('style.scss')
+    return gulp.src('demo/bootstrap.scss')
         .pipe(sass())
         .pipe(gulp.dest('dest'));
 });
