@@ -1,15 +1,6 @@
 @import "variables";
 @import "scss/bootstrap";
 
-@mixin btn-bg-cl($bg,$cl,$bd) {
-  background-color: $bg;
-  color: $cl;
-  border-color: $bd;
-  .fa {
-    color: $cl;
-    background: none;
-  }
-}
 @mixin bdcl($cl) {
   border-color: $cl !important;
 }
@@ -34,7 +25,7 @@
 }
 
 .modal-danger-border {
-  @include bdcl($brand-danger);
+  @include f($brand-danger);
 }
 
 .modal-warning-border {
@@ -44,21 +35,6 @@
 .btn_modal {
   .modal-title {
     color: white;
-  }
-  .modal-primary {
-    background-color: $brand-primary;
-  }
-  .modal-success {
-    background-color: $brand-success;
-  }
-  .modal-danger {
-    background-color: $brand-danger;
-  }
-  .modal-warning {
-    background-color: $brand-warning;
-  }
-  .modal-info {
-    background-color: $brand-info;
   }
 }
 button{
