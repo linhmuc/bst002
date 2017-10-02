@@ -1,0 +1,100 @@
+@import "variables";
+@import "scss/bootstrap";
+
+@mixin btn-bg-cl($bg,$cl,$bd) {
+  background-color: $bg;
+  color: $cl;
+  border-color: $bd;
+  .fa {
+    color: $cl;
+    background: none;
+  }
+}
+
+.btn {
+  border-radius: unset;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@each $i, $btn in (1, primary), (2, secondary), (3, success), (4, info),
+        (5, warning), (6, danger) {
+  .side-right .card-body .btn{
+    &:nth-child(#{$i}) {
+      @extend .btn-outline-#{$btn};
+    }
+  }
+}
+.fa{
+  background: none!important;
+}
+@each $i, $btn in (1, primary), (2, secondary), (3, success), (4, info),
+        (5, warning), (6, danger), (7, link) {
+  .side-left .card-body .btn {
+    &:nth-child(#{$i}) {
+      @extend .btn-#{$btn};
+    }
+  }
+}
+
+@mixin bdcl($cl) {
+  border-color: $cl !important;
+}
+
+.modal-body:before {
+  content: "One fine body...";
+}
+
+.pr_con {
+  @include bdcl($brand-primary);
+}
+
+.su_con {
+  @include bdcl($brand-success);
+}
+
+.in_con {
+  @include bdcl($brand-info);
+}
+
+.da_con {
+  @include bdcl($brand-danger);
+}
+
+.wa_con {
+  @include bdcl($brand-warning);
+}
+
+.btn_modal {
+  .modal-title {
+    color: white;
+  }
+  .pr_h {
+    background-color: $brand-primary;
+  }
+  .su_h {
+    background-color: $brand-success;
+  }
+  .da_h {
+    background-color: $brand-danger;
+  }
+  .wa_h {
+    background-color: $brand-warning;
+  }
+  .in_h {
+    background-color: $brand-info;
+  }
+}
+
+.card-title {
+  margin-bottom: 0
+}
+
+.stdisable .btn {
+  @extend .disabled;
+  cursor: pointer;
+}
+
+.stactive .btn {
+  @extend .active;
+}

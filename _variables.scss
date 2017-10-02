@@ -1,0 +1,63 @@
+$white:  #fff; ;
+$black:  #111 ;
+$red:    #ff5454 ;
+$orange: #fabb3d ;
+$green:  #79c447 ;
+$blue:   #20a8d8;
+$teal:   #67c2ef ;
+$link: #613d7c ;
+$secondary: #c0cadd ;
+
+// Create grayscale
+$gray-dark:                 #292b2c ;
+$gray:                      #464a4c ;
+$gray-light:                #636c72 ;
+$gray-lighter:              #eceeef ;
+$gray-lightest:             #f7f7f9 ;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue; ;
+$brand-link:                transparent ;
+$brand-success:             $green ;
+$brand-info:                $teal ;
+$brand-warning:             $orange ;
+$brand-danger:              $red ;
+$brand-inverse:             $gray-dark ;
+
+$btn-primary-color:              $white ;
+$btn-primary-bg:                 $brand-primary ;
+$btn-primary-border:             $btn-primary-bg ;
+
+$btn-secondary-color:            $black ;
+$btn-secondary-bg:                $secondary  ;
+$btn-secondary-border:           $secondary ;
+
+$btn-info-color:                 $black ;
+$btn-info-bg:                    $brand-info ;
+$btn-info-border:                $btn-info-bg ;
+
+$btn-success-color:              $black ;
+$btn-success-bg:                 $brand-success ;
+$btn-success-border:             $btn-success-bg ;
+
+$btn-warning-color:              $black ;
+$btn-warning-bg:                 $brand-warning ;
+$btn-warning-border:             $btn-warning-bg ;
+
+$btn-danger-color:               $white ;
+$btn-danger-bg:                  $brand-danger ;
+$btn-danger-border:              $btn-danger-bg ;
+
+$link-color:            $brand-primary;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+$btn-padding-x-sm:               .25rem ;
+$btn-padding-y-sm:               .5rem ;
+
+$btn-padding-x-lg:               1rem ;
+$btn-padding-y-lg:               .5rem ;
+
+$btn-padding-x:                  .75rem;
+$btn-padding-y:                  .5rem ;
