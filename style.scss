@@ -8,9 +8,6 @@
 .fa{
   background: none!important;
 }
-.modal-body:before {
-  content: "One fine body...";
-}
 
 .modal-primary-border {
   @include bdcl($brand-primary);
